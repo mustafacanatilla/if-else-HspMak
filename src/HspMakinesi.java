@@ -29,12 +29,19 @@ public class HspMakinesi {
             sonuc = sayi1 * sayi2;
             System.out.print("Seçilen İşlem:3-Çarpma\n----------\nİşlemin Sonucu:" + sonuc);
         } else if (islem == 4) {
-            sonuc = sayi1 / sayi2;
-            System.out.print("Seçilen İşlem:4-Bölme\n----------\nİşlemin Sonucu: " + sonuc);
-        } else {
-            System.out.print("Seçilen İşlem:Böyle Bir İşlem Bulunamadı.\nHatalı Giriş Yapıldı!");
-        }
+            if (sayi2 != 0) {
 
+                sonuc = sayi1 / sayi2;
+                System.out.print("Seçilen İşlem:4-Bölme\n----------\nİşlemin Sonucu: " + sonuc);
+            } else {
+                System.out.print("Bir Sayı 0'a Bölünemez!");
+            }
+    } else
 
+    {
+        System.out.print("Seçilen İşlem:Böyle Bir İşlem Bulunamadı.\nHatalı Giriş Yapıldı!");
     }
+
+
+}
 }
